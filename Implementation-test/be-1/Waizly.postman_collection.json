@@ -1,0 +1,869 @@
+{
+	"info": {
+		"_postman_id": "71b5ad17-5caf-44a6-a0fe-0d5478777284",
+		"name": "Waizly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13993231"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "tasya",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tasya10@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234546",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "1234546",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://be-1.test/api/register"
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "tasya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "maya1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234546",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "1234546",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://implementation-test-be-1.test/api/register"
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jul 2024 03:31:54 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Validation Error.\",\n    \"errors\": {\n        \"email\": [\n            \"The email has already been taken.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "tasya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "tasya11@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234546",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "1234546",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://be-1.test/api/register"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:22:02 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiJkMmIyODRkN2I5YjE1OTE1NDc1NjgzYWFlYTI5YmJmMTFjYTI2ZjJlNmFiYTUzODllNGFkMmI2ZDllY2UwZmY4OWQxZThjZTc4NmM1ZWMwNCIsImlhdCI6MTcyMjEyMjUyMi4yNDkwMzYsIm5iZiI6MTcyMjEyMjUyMi4yNDkwMzcsImV4cCI6MTc1MzY1ODUyMi4yNDU5MSwic3ViIjoiNiIsInNjb3BlcyI6W119.Xmc5z3e5mgN0blbb3P9fjBPCZJpY1LW3rNuLCbqJxb67nrd401buPp5tJSBW2WfwBWS1WDboVNvL7-g0d8fqUojJJub5LbjDHbPgrrQpNAmPw2T5ZqEo7dqo4RIClFMdmvmrlJX4nO2qkocEhlx4olHk5cBEGwsk-JT_5vuxGmRb0Intqm2g69ZH3SQ1MtxWY_w-8WqVAIr2tj_M6tGhltWMXL7xVEegORdTet7ZGNEERIyZkpmsaSa7ToBHXxcBv5Yr8hFTq22_GgmzjIOJc8A5GKkeEz0bQFtiuwxLMgOi0bH4De8NxjvwbNz62s8StgTFYowLpTANjTp3E7i-y5ovsMmLrhXqhEER1OLi0p1n4wa8Vi-bczD61yRpBugPtngUsfgYGiIzWdrI5iPNb47a-8V6rUJDBgR31mTSIX-GhmAEBMsYyJhEkgBUMURkj9cYz6NnXiquzkKrxGMwNlEprn8fJnXTgzrJ2r5s3E-igByz3e0w3Z-fE4WmxrVCekxobxC_iQaZ_98GriVal7YDHrHGvbfEvXkouOMIOxNmlhWu4mf2Ai4H-bnF6cSOYEteY55vuAk4e1feKq_IcZ1_kAneZdn8qS2PwN8v0fWpsZiXWllfbYc1wfymD4-rjNGKnl-1CPfy5jiQBNnav9mt-Bt5HpAh50_7Atly_jQ\",\n        \"name\": \"tasya\"\n    },\n    \"message\": \"User registered successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "tasya10@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234546",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://be-1.test/api/login"
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "tasya10@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234546",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://be-1.test/api/login"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:21:45 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiJkMWQ5OGUzMWFhNDdkOWNhMzliODg3Mzk4Y2NiZWQ5NzViZTJlM2I0YzFlNzczOTZjNzMzMjUzMmE0MmE2NmY4ZmQ3MjFlMTc2NjEyYWU4NyIsImlhdCI6MTcyMjEyMjUwNS44NjkyNDQsIm5iZiI6MTcyMjEyMjUwNS44NjkyNDQsImV4cCI6MTc1MzY1ODUwNS44NTExNzIsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.ceZtrYdHwLajOnnUrFO_Z3pmNsm_FYJqUfx8jP1HpdQrR6TaD4YPJGJxKn01bDfqIYj1VsS2XT4iomvGijXKhVV0oQNYg__k0bhwrK_PgPd86hIVzl_rDpjKKbRgzyhQNvQu_5L3WOyKHoWjfw7tIGKrk6t5dlLXKBGcg8_kaA_EWP89z1mrAecWyp0Kz1bl1q58Tsbm1P1mYeYX32YKH841G4D75XZ6nr56ay77sEeul4UDCcvVswXJO3h7Zk3OxyJg7mgHPCMyixR6XFCdtjAoCAMVkSzX4ipIFCFQjO_sTwJMqqkogbIHoVnYStk5XYLiWAxSfdc6aU8YRjqwcuWvFQ9HLqtYJ_f-pfsVcPy0Q81JwJQw16gvq3Pr600ySj3_ATjehPh8Xa2l3iJMPKGKc5PhHbj3Hf5K2NZsQJpfbbq-tz0nJwFbBiSCWn8ounJEZTwi2hiKfMCOdwtx2BIicn5n0Uki_H6RG5Tn7zcLjRFcFT7dIx-cTXAuhfFF_7AY0G-pyphl8pcwsW-EC3uemiCiUR2L7fNIK1GygrE4Hctxk7aXZptzFPLDLOiOt1Xq4coFah-dfIsU6sv1rMnVLL7ZT0KY4N7Y0aODR4m3HPtKDpUckFQktXC3OJLcktGOJI7ukeHpdkjy0BJsY6ikSqOCLV6xNOF0xKLhAyY\",\n        \"name\": \"tasya\"\n    },\n    \"message\": \"User logged in successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiI4YzZlYmI3NjFhMjJmMjJjYTI3ZjQzOTY2YzUyNDRkN2Q5ZjVhNmE4Y2UyMzYxMDBiOGFkM2NlN2YwMTNiYzhjODk1YTk4MDU5ZmI2OGMyYiIsImlhdCI6MTcyMjAxMjc0MS45NTgyNDksIm5iZiI6MTcyMjAxMjc0MS45NTgyNDksImV4cCI6MTc1MzU0ODc0MS45NTA0MzgsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.Jo6jIUlCHCwa_dKjjOoeTL-k4tArkUo7PraNnePZcsH6GPvWcEoD_OJNu8uBeaWSDTv1Oc8KAZRwLu3Z0wnChl7yukSt85KxziWgF994igKAJ0KBMBtv_0x1ej-jOy20Pd9VAtVA89YMQSN0xz8HQwcDi8ZyxpGAgqurgzHdYzgTmiZz1jcHTQtMmnsAzXNNgONpyvi4Sr5J0mqhbCveYH7-UdKxQyAnwBti85aKIF_Jp0CQ40r9MtmO1VvPYvj2H4xaYfv1MQObW3SFbuS6-jRUqqLlJpogJndDmpBea5XNc0RSWg2sMLOJ7WDBD69q1dZQh1mIiYEiI0dQHlvluXnf3S8NpON2oF3FGIWT06-97OUmlwF1L4DXVu03mdwOkvyTzTRaBI29xr-b57h-gayTq_kjdUFI0OoNwoREfK1gPxjrodT33mgowBXfWNFVkFkbAcF6_5KFsDx0_sL0Xmhh5j2dVX_hTUXkQdWeQ7FgMg6EMQpU4ZAaqpYnZAXaSkcyOI-ZjiTAt868ujLAH8vMaYNLXsAaclrN85Ozg_BhBpYUk3NzirXQQD4vBrJyh4jdhaDHrfvsj613kbiD1ODMAEQbArxPdrH-5npWCP__u3Z4_Xd_TL3rmeLFdB7_ulO_1RvWRncME111_7_KanPPEP8zd_Pxd6vv34b2V9s"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "skincare tasya 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "ini bisa llah masa gabisa",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100000",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://be-1.test/api/product"
+			},
+			"response": [
+				{
+					"name": "Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "skincare tasya 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "ini bisa llah masa gabisa",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100000",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://be-1.test/api/product"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:22:35 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"skincare tasya 1\",\n        \"description\": \"ini bisa llah masa gabisa\",\n        \"stock\": \"10\",\n        \"price\": \"100000\",\n        \"updated_at\": \"2024-07-27T23:22:35.000000Z\",\n        \"created_at\": \"2024-07-27T23:22:35.000000Z\",\n        \"id\": 5\n    },\n    \"message\": \"Product created successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Product Edit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiI4YzZlYmI3NjFhMjJmMjJjYTI3ZjQzOTY2YzUyNDRkN2Q5ZjVhNmE4Y2UyMzYxMDBiOGFkM2NlN2YwMTNiYzhjODk1YTk4MDU5ZmI2OGMyYiIsImlhdCI6MTcyMjAxMjc0MS45NTgyNDksIm5iZiI6MTcyMjAxMjc0MS45NTgyNDksImV4cCI6MTc1MzU0ODc0MS45NTA0MzgsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.Jo6jIUlCHCwa_dKjjOoeTL-k4tArkUo7PraNnePZcsH6GPvWcEoD_OJNu8uBeaWSDTv1Oc8KAZRwLu3Z0wnChl7yukSt85KxziWgF994igKAJ0KBMBtv_0x1ej-jOy20Pd9VAtVA89YMQSN0xz8HQwcDi8ZyxpGAgqurgzHdYzgTmiZz1jcHTQtMmnsAzXNNgONpyvi4Sr5J0mqhbCveYH7-UdKxQyAnwBti85aKIF_Jp0CQ40r9MtmO1VvPYvj2H4xaYfv1MQObW3SFbuS6-jRUqqLlJpogJndDmpBea5XNc0RSWg2sMLOJ7WDBD69q1dZQh1mIiYEiI0dQHlvluXnf3S8NpON2oF3FGIWT06-97OUmlwF1L4DXVu03mdwOkvyTzTRaBI29xr-b57h-gayTq_kjdUFI0OoNwoREfK1gPxjrodT33mgowBXfWNFVkFkbAcF6_5KFsDx0_sL0Xmhh5j2dVX_hTUXkQdWeQ7FgMg6EMQpU4ZAaqpYnZAXaSkcyOI-ZjiTAt868ujLAH8vMaYNLXsAaclrN85Ozg_BhBpYUk3NzirXQQD4vBrJyh4jdhaDHrfvsj613kbiD1ODMAEQbArxPdrH-5npWCP__u3Z4_Xd_TL3rmeLFdB7_ulO_1RvWRncME111_7_KanPPEP8zd_Pxd6vv34b2V9s"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "skincare akhdan",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "ini bisa llah masa gabisa",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://be-1.test/api/product/:product_id",
+					"protocol": "http",
+					"host": [
+						"be-1",
+						"test"
+					],
+					"path": [
+						"api",
+						"product",
+						":product_id"
+					],
+					"variable": [
+						{
+							"key": "product_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product Edit",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "skincare akhdan",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "ini bisa llah masa gabisa",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://be-1.test/api/product/:product_id",
+							"protocol": "http",
+							"host": [
+								"be-1",
+								"test"
+							],
+							"path": [
+								"api",
+								"product",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "product_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:22:45 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Product updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Product All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiI4YzZlYmI3NjFhMjJmMjJjYTI3ZjQzOTY2YzUyNDRkN2Q5ZjVhNmE4Y2UyMzYxMDBiOGFkM2NlN2YwMTNiYzhjODk1YTk4MDU5ZmI2OGMyYiIsImlhdCI6MTcyMjAxMjc0MS45NTgyNDksIm5iZiI6MTcyMjAxMjc0MS45NTgyNDksImV4cCI6MTc1MzU0ODc0MS45NTA0MzgsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.Jo6jIUlCHCwa_dKjjOoeTL-k4tArkUo7PraNnePZcsH6GPvWcEoD_OJNu8uBeaWSDTv1Oc8KAZRwLu3Z0wnChl7yukSt85KxziWgF994igKAJ0KBMBtv_0x1ej-jOy20Pd9VAtVA89YMQSN0xz8HQwcDi8ZyxpGAgqurgzHdYzgTmiZz1jcHTQtMmnsAzXNNgONpyvi4Sr5J0mqhbCveYH7-UdKxQyAnwBti85aKIF_Jp0CQ40r9MtmO1VvPYvj2H4xaYfv1MQObW3SFbuS6-jRUqqLlJpogJndDmpBea5XNc0RSWg2sMLOJ7WDBD69q1dZQh1mIiYEiI0dQHlvluXnf3S8NpON2oF3FGIWT06-97OUmlwF1L4DXVu03mdwOkvyTzTRaBI29xr-b57h-gayTq_kjdUFI0OoNwoREfK1gPxjrodT33mgowBXfWNFVkFkbAcF6_5KFsDx0_sL0Xmhh5j2dVX_hTUXkQdWeQ7FgMg6EMQpU4ZAaqpYnZAXaSkcyOI-ZjiTAt868ujLAH8vMaYNLXsAaclrN85Ozg_BhBpYUk3NzirXQQD4vBrJyh4jdhaDHrfvsj613kbiD1ODMAEQbArxPdrH-5npWCP__u3Z4_Xd_TL3rmeLFdB7_ulO_1RvWRncME111_7_KanPPEP8zd_Pxd6vv34b2V9s"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://be-1.test/api/product"
+			},
+			"response": [
+				{
+					"name": "Product All",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "http://be-1.test/api/product"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:22:54 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"skincare akhdan\",\n            \"description\": \"ini bisa llah masa gabisa\",\n            \"stock\": 10,\n            \"price\": \"100000.00\",\n            \"created_at\": \"2024-07-26T16:55:00.000000Z\",\n            \"updated_at\": \"2024-07-27T23:22:45.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"skincare tasya 1\",\n            \"description\": \"ini bisa llah masa gabisa\",\n            \"stock\": 10,\n            \"price\": \"100000.00\",\n            \"created_at\": \"2024-07-26T16:55:17.000000Z\",\n            \"updated_at\": \"2024-07-26T16:55:17.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"skincare tasya 1\",\n            \"description\": \"ini bisa llah masa gabisa\",\n            \"stock\": 10,\n            \"price\": \"100000.00\",\n            \"created_at\": \"2024-07-26T16:59:08.000000Z\",\n            \"updated_at\": \"2024-07-26T16:59:08.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"skincare tasya 1\",\n            \"description\": \"ini bisa llah masa gabisa\",\n            \"stock\": 10,\n            \"price\": \"100000.00\",\n            \"created_at\": \"2024-07-27T23:22:35.000000Z\",\n            \"updated_at\": \"2024-07-27T23:22:35.000000Z\"\n        }\n    ],\n    \"pagination\": {\n        \"total\": 4,\n        \"per_page\": 15,\n        \"current_page\": 1,\n        \"last_page\": 1,\n        \"next_page_url\": null,\n        \"prev_page_url\": null\n    },\n    \"message\": \"Products retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Product Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiI4YzZlYmI3NjFhMjJmMjJjYTI3ZjQzOTY2YzUyNDRkN2Q5ZjVhNmE4Y2UyMzYxMDBiOGFkM2NlN2YwMTNiYzhjODk1YTk4MDU5ZmI2OGMyYiIsImlhdCI6MTcyMjAxMjc0MS45NTgyNDksIm5iZiI6MTcyMjAxMjc0MS45NTgyNDksImV4cCI6MTc1MzU0ODc0MS45NTA0MzgsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.Jo6jIUlCHCwa_dKjjOoeTL-k4tArkUo7PraNnePZcsH6GPvWcEoD_OJNu8uBeaWSDTv1Oc8KAZRwLu3Z0wnChl7yukSt85KxziWgF994igKAJ0KBMBtv_0x1ej-jOy20Pd9VAtVA89YMQSN0xz8HQwcDi8ZyxpGAgqurgzHdYzgTmiZz1jcHTQtMmnsAzXNNgONpyvi4Sr5J0mqhbCveYH7-UdKxQyAnwBti85aKIF_Jp0CQ40r9MtmO1VvPYvj2H4xaYfv1MQObW3SFbuS6-jRUqqLlJpogJndDmpBea5XNc0RSWg2sMLOJ7WDBD69q1dZQh1mIiYEiI0dQHlvluXnf3S8NpON2oF3FGIWT06-97OUmlwF1L4DXVu03mdwOkvyTzTRaBI29xr-b57h-gayTq_kjdUFI0OoNwoREfK1gPxjrodT33mgowBXfWNFVkFkbAcF6_5KFsDx0_sL0Xmhh5j2dVX_hTUXkQdWeQ7FgMg6EMQpU4ZAaqpYnZAXaSkcyOI-ZjiTAt868ujLAH8vMaYNLXsAaclrN85Ozg_BhBpYUk3NzirXQQD4vBrJyh4jdhaDHrfvsj613kbiD1ODMAEQbArxPdrH-5npWCP__u3Z4_Xd_TL3rmeLFdB7_ulO_1RvWRncME111_7_KanPPEP8zd_Pxd6vv34b2V9s"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://be-1.test/api/product/:product_id",
+					"protocol": "http",
+					"host": [
+						"be-1",
+						"test"
+					],
+					"path": [
+						"api",
+						"product",
+						":product_id"
+					],
+					"variable": [
+						{
+							"key": "product_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product Detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://be-1.test/api/product/:product_id",
+							"protocol": "http",
+							"host": [
+								"be-1",
+								"test"
+							],
+							"path": [
+								"api",
+								"product",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "product_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:22:59 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"skincare akhdan\",\n        \"description\": \"ini bisa llah masa gabisa\",\n        \"stock\": 10,\n        \"price\": \"100000.00\",\n        \"created_at\": \"2024-07-26T16:55:00.000000Z\",\n        \"updated_at\": \"2024-07-27T23:22:45.000000Z\"\n    },\n    \"message\": \"Product retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Product Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YzlkYjBkMC0zMjI0LTQ5YTYtOTE2OS0zOWE5YjY3YWFkYzYiLCJqdGkiOiI4YzZlYmI3NjFhMjJmMjJjYTI3ZjQzOTY2YzUyNDRkN2Q5ZjVhNmE4Y2UyMzYxMDBiOGFkM2NlN2YwMTNiYzhjODk1YTk4MDU5ZmI2OGMyYiIsImlhdCI6MTcyMjAxMjc0MS45NTgyNDksIm5iZiI6MTcyMjAxMjc0MS45NTgyNDksImV4cCI6MTc1MzU0ODc0MS45NTA0MzgsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.Jo6jIUlCHCwa_dKjjOoeTL-k4tArkUo7PraNnePZcsH6GPvWcEoD_OJNu8uBeaWSDTv1Oc8KAZRwLu3Z0wnChl7yukSt85KxziWgF994igKAJ0KBMBtv_0x1ej-jOy20Pd9VAtVA89YMQSN0xz8HQwcDi8ZyxpGAgqurgzHdYzgTmiZz1jcHTQtMmnsAzXNNgONpyvi4Sr5J0mqhbCveYH7-UdKxQyAnwBti85aKIF_Jp0CQ40r9MtmO1VvPYvj2H4xaYfv1MQObW3SFbuS6-jRUqqLlJpogJndDmpBea5XNc0RSWg2sMLOJ7WDBD69q1dZQh1mIiYEiI0dQHlvluXnf3S8NpON2oF3FGIWT06-97OUmlwF1L4DXVu03mdwOkvyTzTRaBI29xr-b57h-gayTq_kjdUFI0OoNwoREfK1gPxjrodT33mgowBXfWNFVkFkbAcF6_5KFsDx0_sL0Xmhh5j2dVX_hTUXkQdWeQ7FgMg6EMQpU4ZAaqpYnZAXaSkcyOI-ZjiTAt868ujLAH8vMaYNLXsAaclrN85Ozg_BhBpYUk3NzirXQQD4vBrJyh4jdhaDHrfvsj613kbiD1ODMAEQbArxPdrH-5npWCP__u3Z4_Xd_TL3rmeLFdB7_ulO_1RvWRncME111_7_KanPPEP8zd_Pxd6vv34b2V9s"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://be-1.test/api/product/:product_id",
+					"protocol": "http",
+					"host": [
+						"be-1",
+						"test"
+					],
+					"path": [
+						"api",
+						"product",
+						":product_id"
+					],
+					"variable": [
+						{
+							"key": "product_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://be-1.test/api/product/:product_id",
+							"protocol": "http",
+							"host": [
+								"be-1",
+								"test"
+							],
+							"path": [
+								"api",
+								"product",
+								":product_id"
+							],
+							"variable": [
+								{
+									"key": "product_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 23:23:10 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Product deleted successfully.\"\n}"
+				}
+			]
+		}
+	]
+}
