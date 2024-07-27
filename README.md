@@ -21,6 +21,7 @@ Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 ```bash
 composer install
 ```
+
 ###2. Generate Application Key
 Jalankan perintah berikut untuk menghasilkan application key:
 ```bash
