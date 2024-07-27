@@ -22,31 +22,31 @@ Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 composer install
 ```
 
-###2. Generate Application Key
+### 2. Generate Application Key
 Jalankan perintah berikut untuk menghasilkan application key:
 ```bash
 php artisan key:generate
 ```
 
-###3.Migrasi Database
+### 3.Migrasi Database
 Jalankan perintah berikut untuk melakukan migrasi database:
 ```bash
 php artisan migrate
 ```
 
-###4.Jalankan Server
+### 4.Jalankan Server
 Jalankan perintah berikut untuk memulai server pengembangan Laravel:
 ```bash
 php artisan serve
 ```
 
-###5.Akses Laravel Telescope
+### 5.Akses Laravel Telescope
 Anda dapat mengakses Laravel Telescope di
 ```bash
  http://localhost:8000/telescope
 ```
 
-###4.Jalankan Unit test
+### 4.Jalankan Unit test
 Jalankan perintah berikut untuk memulai unit test pengembangan Laravel:
 ```bash
 php artisan test
