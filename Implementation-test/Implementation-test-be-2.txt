@@ -1,0 +1,66 @@
+1. SELECT * FROM employees;
+
+2. SELECT COUNT(*) AS jumlah_manager
+FROM employees
+WHERE job_title = 'Manager';
+
+3. SELECT name, salary
+FROM employees
+WHERE department IN ('Sales', 'Marketing');
+
+4.SELECT AVG(salary) AS rata_rata_gaji
+FROM employees
+WHERE joined_date >= CURDATE() - INTERVAL 5 YEAR;
+
+5. SELECT e.name, e.salary, SUM(s.sales) AS total_penjualan
+FROM employees e
+JOIN sales_data s ON e.employee_id = s.employee_id
+GROUP BY e.employee_id, e.name, e.salary
+ORDER BY total_penjualan DESC
+LIMIT 5;
+
+6. WITH DeptAvg AS (
+    SELECT department, AVG(salary) AS avg_salary
+    FROM employees
+    GROUP BY department
+),
+OverallAvg AS (
+    SELECT AVG(salary) AS overall_avg_salary
+    FROM employees
+)
+SELECT e.name, e.salary, da.avg_salary
+FROM employees e
+JOIN DeptAvg da ON e.department = da.department
+CROSS JOIN OverallAvg oa
+WHERE da.avg_salary > oa.overall_avg_salary;
+
+
+7. WITH SalesRank AS (
+    SELECT e.name, SUM(s.sales) AS total_penjualan,
+           RANK() OVER (ORDER BY SUM(s.sales) DESC) AS ranking
+    FROM employees e
+    JOIN sales_data s ON e.employee_id = s.employee_id
+    GROUP BY e.employee_id, e.name
+)
+SELECT name, total_penjualan, ranking
+FROM SalesRank;
+
+8.  //create store procedure//
+
+DELIMITER //
+
+CREATE PROCEDURE GetDepartmentEmployeesTotalSalary(IN dept_name VARCHAR(50))
+BEGIN
+    SELECT name, salary
+    FROM employees
+    WHERE department = dept_name;
+END //
+
+DELIMITER ;
+
+
+//call procedure//
+
+CALL GetDepartmentEmployeesTotalSalary('Marketing');
+
+
